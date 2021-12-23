@@ -13,6 +13,9 @@ ___
 ## --> PANTALLAS DE EVIDENCIA:
 
 ### - Envío/Entrega:
+![image](https://user-images.githubusercontent.com/73366557/147276335-ad135ba4-ea61-41c5-9193-ff28762a1763.png)
+![image](https://user-images.githubusercontent.com/73366557/147276452-48342390-558d-42fb-8fa7-62e8a0a361a3.png)
+![image](https://user-images.githubusercontent.com/73366557/147276719-50e5bfdd-9373-4bc8-9fe6-e09a5afb1bb6.png)
 
 ### - Código fuente:
 ![image](https://user-images.githubusercontent.com/73366557/147275946-444f8ce7-7ec3-4ed2-afef-043107ff5e2b.png)
