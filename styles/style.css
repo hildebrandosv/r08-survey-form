@@ -6,14 +6,35 @@
 /* Variables definition */
 * {
    --colorBgNavBarr: #f9da68;
-   --colorMainTitle: #EEEEEE;
+   --colorMainTitle: #313172;
    --colorMainFooter: green;
    --colorBgError: lightgray;
    --colorTxtError: red;
    --colorBgSuccess: #BFFF5F;
    --colorTxtSuccess: green;
+   --colorBgForms: #262645;
    box-sizing: border-box;
    margin: 0;
    padding: 0;
    border: none;
+}
+body {
+  height: 100%;
+  background-image: url('../images/main-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.clMainTitle {
+  color: var(--colorMainTitle);
+  font-size: 2rem;
+}
+.clSecondaryTitle {
+  color: var(--colorMainTitle);
+  font-size: 21px;
+  font-style: italic;
+}
+.clBgForms {
+  background-color: var(--colorBgForms);
+  opacity: 0.9;
 }

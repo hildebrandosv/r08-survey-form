@@ -20,9 +20,154 @@
 </head>
 
 <body>
-  <!--  -->
+  <!-- Main titles survey -->
+  <h1 id="title" class="text-center mt-5 clMainTitle">Encuesta de satisfacción freeCodeCamp</h1>
+  <h3 id="description" class="text-center clSecondaryTitle">Gracias por tomarse el tiempo de respondernos.</h3>
+  <!-- Main DIV survey -->
+  <div id="idMainDiv" class="container w-50 rounded-3 clBgForms">
+    <form id="survey-form" class="px-5 py-2">
+      <div class="mb-2">
+        <label id="name-label" for="name" class="form-label text-white fs-5">Nombre</label>
+        <input type="text" id="name" class="form-control" required placeholder="Digite su nombre(s) y apellido(s)"
+          aria-describedby="helpId">
+        <small id="" class="text-muted">Es importante conocer su nombre completo</small>
+      </div>
+      <div class="mb-2">
+        <label id="email-label" for="email" class="form-label text-white fs-5">Email</label>
+        <input type="email" id="email" class="form-control" required placeholder="Digite su email"
+          aria-describedby="helpId">
+        <small id="" class="text-muted">Eventualmente podríamos comunicarnos vía email</small>
+      </div>
+      <div class="mb-2">
+        <label id="number-label" for="number" class="form-label text-white fs-5">Edad (opcional)</label>
+        <input type="number" id="number" class="form-control" min="1" max="106" placeholder="Digite su edad"
+          aria-describedby="helpId">
+        <small id="" class="text-muted">Si desea puede informarnos su edad</small>
+      </div>
+      <div class="mb-2">
+        <label for="dropdown" class="form-label text-white fs-5">Cuál opción describe mejor su ocupación
+          actual</label>
+        <input class="form-control" list="datalistOptions" id="dropdown" required
+          placeholder="Seleccione su rol actual">
+        <small id="" class="text-muted">Elija el rol con el que más se identifica actualmente</small>
+        <datalist id="datalistOptions">
+          <option value="Estudiante">
+          <option value="Trabajo a tiemplo completo">
+          <option value="Trabajo a medio tiempo">
+          <option value="Prefiero no decirlo">
+          <option value="Otro">
+        </datalist>
+      </div>
+      <div class="mb-2">
+        <label class="form-check-label text-white fs-5">
+          ¿Recomendaría freeCodeCamp a sus amigos?
+        </label>
+        <div class="form-check ms-2">
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="radio" class="form-check-input" name="naRadio" id="" value="checkedValue" checked>
+              Definitivamente
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="radio" class="form-check-input" name="naRadio" id="" value="">
+              Quizá
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="radio" class="form-check-input" name="naRadio" id="" value="">
+              No estoy seguro(a)
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-2">
+        <label class="form-check-label text-white fs-5">
+          ¿Qué tema legustaría ver? (Elija los que apliquen)
+        </label>
+        <div class="form-check ms-2">
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox1" id="" value="FE">
+              Front End
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox2" id="" value="BE">
+              Back End
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox3" id="" value="VDD">
+              Visualización de datos
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox4" id="" value="R">
+              Retos
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox5" id="" value="CDCA">
+              Comunidad de Código Abierto
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox6" id="" value="SDA">
+              Sala de Ayuda  Gitters
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox7" id="" value="V">
+              Videos
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox8" id="" value="GS">
+              Grupos Sociales - City Meetups
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox9" id="" value="W">
+              Wiki
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox10" id="" value="F">
+              Foros
+            </label>
+          </div>
+          <div>
+            <label class="form-check-label text-white fs-5">
+              <input type="checkbox" class="form-check-input" name="naCheckBox11" id="" value="CA">
+              Cursos Adicionales
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-2">
+        <label id="" for="" class="form-label text-white fs-5">¿Cualquier comentario o
+          sugerencia?</label>
+        <textarea class="form-control" name="" id="" rows="4" placeholder="Digite su comentario aquí..."></textarea>
+        <small id="" class="text-muted">Su retroalimentación es muy importante para nosotros</small>
+      </div>
+      <button id="submit" type="submit" class="btn btn-success w-100 my-2">Enviar</button>
+    </form> <!-- End: id="survey-form"  -->
+  </div> <!-- End: id="idMainDiv"  -->
+
   <!-- Page Footer -->
-  <footer class="mt-3 text-center text-lg-start bg-success bg-opacity-25 text-muted" >
+  <footer class="mt-3 text-center text-lg-start bg-success bg-opacity-25 text-muted">
     <!-- Copyright -->
     <div class="text-center p-1">
       <img class="" src="./images/own_logo/Logo s3.svg" alt="" width="35" height="35">
